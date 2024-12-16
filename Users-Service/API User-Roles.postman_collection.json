@@ -1,0 +1,228 @@
+{
+	"info": {
+		"_postman_id": "e43e260f-1e7b-4417-a6ad-8e2fd700b6ce",
+		"name": "API User/Roles",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40447736"
+	},
+	"item": [
+		{
+			"name": "GetUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8091/v2/roles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"v2",
+						"roles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutUsers",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"112211ssss2\",\r\n    \"lastName\":\"dwadaw\",\r\n    \"address\":\"po32awdaawtw1o\",\r\n    \"phoneNumber\":942110772,\r\n    \"email\":\"a12113@us323s.edu\",\r\n    \"role\": {\r\n        \"id\": 3  // Solo se envia el ID role\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8091/v2/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"v2",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteUsers",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"112211ssss2\",\r\n    \"lastName\":\"dwadaw\",\r\n    \"address\":\"po32awdaawtw1o\",\r\n    \"phoneNumber\":942110772,\r\n    \"email\":\"a12113@us323s.edu\",\r\n    \"role\": {\r\n        \"id\": 3  // Solo se envia el ID role\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8091/v2/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"v2",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostUsers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"112211ssss2\",\r\n    \"lastName\":\"dwadaw\",\r\n    \"address\":\"po32awdaawtw1o\",\r\n    \"phoneNumber\":942110772,\r\n    \"email\":\"a12113@uss.edu\",\r\n    \"role\": {\r\n        \"id\": 3  // Solo se envia el ID role\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8091/v2/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"v2",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRoles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8091/v2/roles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"v2",
+						"roles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostRoles",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Administrador2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8091/v2/roles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"v2",
+						"roles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostRoles Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8091/v2/roles/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"v2",
+						"roles",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutRoles",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Administrador3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8091/v2/roles/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8091",
+					"path": [
+						"v2",
+						"roles",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

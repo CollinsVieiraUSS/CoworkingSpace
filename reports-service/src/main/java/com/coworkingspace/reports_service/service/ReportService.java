@@ -7,9 +7,15 @@ import com.coworkingspace.reports_service.entity.Report;
 
 public interface ReportService {
 	public List<Report> findAll(Pageable page);
-	public Report findByReportType(String reportType,Pageable page);
-	public Report findById(int id);
+
+	public List<Report> findByReportType(String reportType, Pageable page);
+
+	public Report findById(int id);;
+	
 	public Report save(Report obj);
+
 	public boolean delete(int id);
+
+	public List<Report> findByUserId(int id, Pageable page);
 
 }
